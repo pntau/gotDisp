@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mogote Games - South African mobile game studio developing Motabogi, an endless runner game set in vibrant neighborhoods.">
+    <meta name="keywords" content="Motabogi, mobile game, runner game, South Africa, Mogote Games, endless runner">
+    <meta name="author" content="Mogote Games">
+    <meta property="og:title" content="Mogote Games - Where Dreams Become Reality">
+    <meta property="og:description" content="Experience Motabogi - An endless runner through South African neighborhoods">
+    <meta property="og:image" content="imgs/mogotegamesLogo.png">
+    <meta property="og:type" content="website">
+    <title>Mogote Games - Where Dreams Become Reality</title>
+    <link rel="icon" type="image/png" href="imgs/mogoteIcon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="imgs/mogotegamesLogo.png" alt="Mogote Games">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Slider Section -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="imgs/spash1.png" alt="Game 1">
+                <div class="slide-content">
+                    <h1 class="slide-title">Run The Streets</h1>
+                    <p class="slide-description">Experience the thrill of running through authentic South African neighborhoods</p>
+                    <button class="cta-button">Coming Soon</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="imgs/splash2.png" alt="Game 2">
+                <div class="slide-content">
+                    <h1 class="slide-title">Master The Hood</h1>
+                    <p class="slide-description">Sprint, dodge, and slide your way to the top</p>
+                    <button class="cta-button">Coming Soon</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="imgs/splash3.png" alt="Game 3">
+                <div class="slide-content">
+                    <h1 class="slide-title">Own Your Run</h1>
+                    <p class="slide-description">Collect power-ups and customize your runner</p>
+                    <button class="cta-button">Coming Soon</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Controls -->
+        <button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="slider-btn next" onclick="changeSlide(1)">&#10095;</button>
+        
+        <!-- Slider Dots -->
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- Featured Games Section -->
+    <section class="featured-section" id="games">
+        <div class="container">
+            <h2 class="section-title">Our Game</h2>
+            <div class="game-showcase">
+                <div class="game-hero">
+                    <img src="imgs/spash1.png" alt="Our Game">
+                    <div class="game-hero-info">
+                        <h3>Motabogi</h3>
+                        <span class="game-badge">Coming Soon</span>
+                        <p>Sprint through vibrant South African neighborhoods in this thrilling endless runner. Dodge obstacles, collect rewards, and become the ultimate street runner!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">About Mogote Games</h2>
+                <p>We are a passionate South African game development studio bringing the energy and culture of our neighborhoods to mobile gaming. At Mogote Games, every game we create reflects our unique heritage and the vibrant spirit of our community.</p>
+                <a href="https://www.facebook.com/profile.php?id=61576959323737" target="_blank" rel="noopener noreferrer">
+                    <button class="cta-button-secondary">Follow Our Journey</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Stay Updated</h2>
+                <p>Be the first to know when Motabogi launches. Follow us on Facebook for exclusive updates, gameplay previews, and behind-the-scenes content!</p>
+                <a href="https://www.facebook.com/profile.php?id=61576959323737" target="_blank" rel="noopener noreferrer">
+                    <button class="cta-button">Follow on Facebook</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#news">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=61576959323737" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Mogote Games a Boscla Core entity &copy; All rights reserved 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
